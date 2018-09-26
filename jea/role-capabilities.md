@@ -94,7 +94,7 @@ Example                                                                         
 `'*-Func'`                                                                                   | Allows the user to run any cmdlet or function with the noun `Func`.
 `@{ Name = 'My-Func'; Parameters = @{ Name = 'Param1'}, @{ Name = 'Param2' }}`               | Allows the user to run `My-Func` with the `Param1` and/or `Param2` parameters. Any value can be supplied to the parameters.
 `@{ Name = 'My-Func'; Parameters = @{ Name = 'Param1'; ValidateSet = 'Value1', 'Value2' }}`  | Allows the user to run `My-Func` with the `Param1` parameter. Only "Value1" and "Value2" can be supplied to the parameter.
-`@{ Name = 'My-Func'; Parameters = @{ Name = 'Param1'; ValidatePattern = 'contoso.*' }}`     | Allows the user to run `My-Func` with the `Param1` parameter. Any value starting with "contoso" can be supplied to the parameter.
+`@{ Name = 'My-Func'; Parameters = @{ Name = 'Param1'; ValidatePattern = 'contoso.*' }}`     | Allows the user to run `My-Func` with the `Param1` parameter. Any value starting with "contoso." can be supplied to the parameter.
 
 
 > [!WARNING]
